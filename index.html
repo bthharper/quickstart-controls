@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular2 SohoXi Components</title>
+
+    <!-- Meta Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" id="stylesheet" href="sohoxi/css/grey-theme.css" type="text/css">
+    <link rel="stylesheet" id="stylesheet" href="site.css" type="text/css">
+
+    <!-- jQuery and Plugin Code -->
+    <script src='sohoxi/js/jquery-3.0.0-beta1.js'></script>
+    <script src='sohoxi/js/sohoxi.js'></script>
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Module Loader used by TypeScript. -->
+    <script src="systemjs.config.js"></script>
+
+    <script>
+        System.import('app')
+            .then(function (m) {
+                 $('body').initialize('en-US');
+            })
+            .catch(function (err) { console.error(err); });
+    </script>
+</head>
+
+<body>
+
+  <body>
+    
+    <my-app>
+      Loading... waiting....
+    </my-app>
+  </body>
+
+</html>

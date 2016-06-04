@@ -1,0 +1,6 @@
+<button [disabled]="disabled" [ngClass]="setClasses()" (click)="onClick()" type="button">
+    <svg *ngIf="icon !== null" role="presentation" aria-hidden="true" focusable="false" class="icon">
+        <use attr.xlink:href="{{icon}}"></use>
+    </svg>
+    <span><ng-content></ng-content></span>
+</button>

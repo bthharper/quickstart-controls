@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+  background-color: #ffffff; }
+  
+  .header {
+  background-color: #806594; }
+  .header.azure07 {
+    background-color: #2578a9; }
+  .header.turquoise07 {
+    background-color: #448d83; }
+  .header.emerald06 {
+    background-color: #76b051; }
+  .header h1 {
+    line-height: 40px; }
+  .header.is-sticky + .scrollable-container {
+    padding-top: 0 !important; }
+  .header.is-scrolled-down + .page-container .site-hero h1,
+  .header.is-scrolled-down + .page-container .site-hero .timestamp {
+    display: none; }
+  .header.is-scrolled-down + .page-container .full-width {
+    display: none; }
+  .header.is-scrolled-down h1 {
+    display: inline-block; }
+  .header.is-scrolled-down a.btn-icon {
+    display: inline-block; }
+  .header h1 {
+    display: none; }
+  .header a.btn-icon {
+    display: none; }
